@@ -1,6 +1,6 @@
 {% set name = "astcheck" %}
-{% set version = "0.2.5" %}
-{% set sha256 = "ba9987e8dfe6c2b9ea6720ab8fbdb5aa00fdfa2908017be8a272b2a4b663397d" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "360d998cf9c67baf4bea1729c161a292c4bbec272a0a25f35e793dc6a59758c0" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: python -m flit install --deps none
 
 requirements:
-  build:
+  host:
     - python >=3
     - pip
     - flit
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Check Python ASTs against templates'
+  summary: Check Python ASTs against templates
 
   description: |
     astcheck compares Python Abstract Syntax Trees against a template. This is
