@@ -14,15 +14,15 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m flit install --deps none
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
 
 requirements:
   host:
-    - python >=3
+    - python >=3.5
     - pip
     - flit
   run:
-    - python
+    - python >=3.5
 
 test:
   imports:
