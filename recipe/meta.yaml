@@ -1,6 +1,6 @@
 {% set name = "astcheck" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "360d998cf9c67baf4bea1729c161a292c4bbec272a0a25f35e793dc6a59758c0" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "e979b7450aff2b9ddc166f0533141d8a3b13ce0dfb923efa76fe9ed7c8747844" %}
 
 package:
   name: {{ name|lower }}
